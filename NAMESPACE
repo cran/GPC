@@ -1,0 +1,32 @@
+#exportPattern("^[[:alpha:]]+")
+
+#export(ask)
+export(tell,tell.GPCE.sparse,tell.GPCE.lar,tell.GPCE.quad)
+export(plot.GPCE.sparse,plot.GPCE.lar,plot.GPCE.quad)
+export(print.GPCE.sparse,print.GPCE.lar,print.GPCE.quad)
+export(predict.GPCE.sparse,predict.GPCE.lar,predict.GPCE.quad)
+
+import("randtoolbox")
+import("orthopolynom")
+import("ks")
+import("lars")
+
+export(getM,indexCardinal,generatePCEcoeff,getSobol,CreateQuadrature,polyNorm) # PCE related functions
+
+export(GPCE.sparse)
+#S3method(tell, GPCE.sparse)
+#S3method(print, GPCE.sparse)
+#S3method(plot, GPCE.sparse)
+#S3method(predict, GPCE.sparse)
+
+export(GPCE.quad)
+#S3method(tell, GPCE.quad,tell.GPCE.quad)
+#S3method(print, GPCE.quad,print.GPCE.quad)
+#S3method(plot, GPCE.quad,plot.GPCE.quad)
+#S3method(predict, GPCE.quad,predict.GPCE.quad)
+
+export(GPCE.lar)
+#S3method(tell, GPCE.lar,tell.GPCE.lar)
+#S3method(print, GPCE.lar,print.GPCE.lar)
+#S3method(plot, GPCE.lar,plot.GPCE.lar)
+#S3method(predict, GPCE.lar, predict.GPCE.lar)
